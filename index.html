@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="formHolder">
+        <h1>Fill in the form: </h1>
+        <form class="validation" id="myForm" action="" method="get">
+            <div class="validation__textarea" hasMessage='no'>
+                <textarea name="" id="textarea1" maxlengthCustom="255" placeholder="Description" required></textarea>
+                <div class="counter"></div>
+            </div>
+            <div class="validation__radio" hasMessage='no'>
+                <h4>Send confirmation:</h4>
+                <label class="container">Yes
+                    <input type="radio" name="consent" value="yes" required>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">No
+                    <input type="radio" name="consent" value="no" required>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="validation__select" hasMessage='no'>
+                <select name="vat" id="" required>
+                    <option value="" class="placeholderSelect" disabled selected>Choose VAT</option>
+                    <option value="0.19">19</option>
+                    <option value="0.21">21</option>
+                    <option value="0.23">23</option>
+                    <option value="0.25">25</option>
+                </select>
+            </div>
+            <div class="validation__inputVat" hasMessage='no'>
+                <input type="text" placeholder="Price netto EUR" disabled>
+            </div>
+            <div class="validation__inputResult">
+                <input type="text" placeholder="Price brutto EUR" disabled>
+            </div>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- <div class="result">
+        <h1></h1>
+        <div class="sign">
+            <span></span>
+            <span></span>
+        </div>
+    </div> -->
+</body>
+
+</html>
